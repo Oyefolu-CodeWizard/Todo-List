@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array destructuring</title>
+</head>
+<body>
+    
+<!-- let introduction = ["Hello", "I" , "am", "Sarah"];
+let greeting = introduction[0];
+let name = introduction[3];
+
+console.log(greeting);//"Hello"
+console.log(name);//"Sarah"
+ -->
+
+
+
+console.log(greeting);//"Hello"
+console.log(pronoun);//"I"
+
+ -->
+
+ <!-- let [greeting, pronoun] = ["Hello", "I" , "am", "Sarah"];
+
+console.log(greeting);//"Hello"
+console.log(pronoun);//"I" -->
+
+
+<!-- let [greeting,,,name] = ["Hello", "I" , "am", "Sarah"];
+
+console.log(greeting);//"Hello"
+console.log(name);//"Sarah"
+ -->
+
+
+ <!-- let [,pronoun,,name] = ["Hello", "I" , "am", "Sarah"];
+
+console.log(pronoun);//"I"
+console.log(name);//"Sarah"
+
+ -->
+
+
+
+ <!-- assigning to rest -->
+
+ <!-- let [greeting,...intro] = ["Hello", "I" , "am", "Sarah"];
+
+console.log(greeting);//"Hello"
+console.log(intro);//["I", "am", "Sarah"]
+
+ -->
+
+    <script>
+
+let food = ["rice","beans","spaghetti"];
+let protein = food[1];
+console.log(protein);
+let carb = food[0];
+
+ let introduction = ["Hello", "I" , "am", "Sarah"];
+let [greeting,pronoun] = introduction;
+console.log(pronoun);
+
+let [,t,,name] = introduction;
+
+
+let hobbies = ["singing","dancing","writing","playing","swimming"]
+
+let [art,,...otherHobbies] = hobbies;
+console.log(otherHobbies);
+console.log(art,);
+
+console.log(name,t);
+
+    </script>
+</body>
+</html>

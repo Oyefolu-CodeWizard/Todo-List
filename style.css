@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 450px;
+  border: 1px solid red;
+}
+.todo-nav {
+  width: 100%;
+  background-color: rebeccapurple;
+  display: flex;
+  padding: 10px;
+}
+.todo-nav .fas {
+  flex: auto;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+.todo-nav h2 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.add-task {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  /* background: rebeccapurple; */
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
+input[type="button"] {
+  background-color: rebeccapurple;
+}
+.todo-input {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  gap: 10px;
+  display: none;
+}
+.todo-text {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid rebeccapurple;
+  outline-color: rgba(113, 44, 177, 0.726);
+}
+.submit {
+  border: unset;
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+.todos{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-weight: 600;
+    margin: 10px;
+}
+.edit-btn{
+  border: unset;
+  width: 50px;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+.edit-form{
+  display: none;
+}
+.edit-input{
+  padding: 3px 5px;
+  outline-color: blueviolet;
+  border: 1px solid rebeccapurple;
+}
+.buttons{
+  cursor: pointer;
+}
+.buttons span{
+  margin-right: 10px;
+}
+.todo-list ol li{
+  margin: 0 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
