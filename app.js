@@ -7,6 +7,7 @@ let inputText = document.querySelector(".todo-text");
 let editForm = document.querySelector(".edit-form");
 let editInput = document.querySelector(".edit-input");
 let bars = todoNav.querySelector(".fas");
+let checkBar = document.querySelector('input[type="checkbox"]');
 
 let todo_list = [];
 
@@ -33,20 +34,30 @@ function setLocalStorage() {
   localStorage.setItem('toDos', JSON.stringify(localDb))
 }
 
-bars.addEventListener('click', ()=>{
-  console.log("Clicked");
+  function mapToDos() {
+    let getToDos = localStorage.getItem("toDos")
+    let parsedToDos = JSON.parse(getToDos)
 
-  let getToDos = localStorage.getItem("toDos")
-  let parsedToDos = JSON.parse(getToDos)
+    const mapToDos = parsedToDos.map(t =>{
+      return `<li>
+              ${t}
+      </li>`
+    }).join('')
 
-  const mapToDos = parsedToDos.map(t =>{
-    return `<li>
-            ${t}
-    </li>`
-  }).join('')
+    let mapper = todoList.innerHTML = `<ol>${mapToDos}</ol>`
+    return mapper;
+  }
 
-    todoList.innerHTML = `<ol>${mapToDos}</ol>`
-    return todoList;
+  function unMapToDos() {
+    mapper = todoList.innerHTML = ``;
+  }
+
+checkBar.addEventListener('click', (e)=>{
+  if(e.target.checked){
+    mapToDos();
+  } else {
+    unMapToDos();
+  }
 })
 
 function handleCreateNewTask() {
@@ -93,6 +104,7 @@ const handleEditClick = (id) => {
 const handleDeleteClick = (id)=>{
     console.log(todo_list[id - 1]);
     todo_list[id - 1].remove()
+    return todo_list[id - 1]
 }
 
 function createTodo(TODOS_) {

@@ -12,13 +12,18 @@ body {
 }
 .container {
   width: 450px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .todo-nav {
   width: 100%;
   background-color: rebeccapurple;
   display: flex;
   padding: 10px;
+}
+.todo-nav input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 .todo-nav .fas {
   flex: auto;
