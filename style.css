@@ -61,7 +61,8 @@ input[type="button"] {
   gap: 10px;
   /* display: none; */
 }
-.todo-text {
+.todo-text,
+#textarea {
   width: 450px;
   padding: 10px;
   border: 1px solid rebeccapurple;
@@ -69,7 +70,9 @@ input[type="button"] {
   resize: none;
   border-radius: 5px;
 }
-.submit {
+.submit,
+.edit,
+.delete {
   border: unset;
   width: 100px;
   height: 20px;
@@ -126,7 +129,8 @@ input[type="button"] {
   text-decoration: none;
   color: black;
 }
-.detail {
+.detail,
+.editCont {
   display: flex;
   flex-direction: column;
 }
