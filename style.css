@@ -9,10 +9,11 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .container {
   width: 450px;
-  /* border: 1px solid red; */
+  border: 1px solid rebeccapurple;
 }
 .todo-nav {
   width: 100%;
@@ -20,7 +21,7 @@ body {
   display: flex;
   padding: 10px;
 }
-.todo-nav input{
+.todo-nav input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -40,10 +41,11 @@ body {
   display: flex;
   justify-content: center;
   padding: 10px 20px;
+  position: relative;
+  top: 15px;
   border-radius: 20px;
   border: none;
   outline: none;
-  /* background: rebeccapurple; */
   color: white;
   font-weight: 900;
   cursor: pointer;
@@ -71,35 +73,35 @@ input[type="button"] {
   border-radius: 5px;
   margin-top: 8px;
 }
-.todos{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-    font-weight: 600;
-    margin: 10px;
+.todos {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-weight: 600;
+  margin: 10px;
 }
-.edit-btn{
+.edit-btn {
   border: unset;
   width: 50px;
   height: 20px;
   border-radius: 5px;
   margin-top: 8px;
 }
-.edit-form{
+.edit-form {
   display: none;
 }
-.edit-input{
+.edit-input {
   padding: 3px 5px;
   outline-color: blueviolet;
   border: 1px solid rebeccapurple;
 }
-.buttons{
+.buttons {
   cursor: pointer;
 }
-.buttons span{
+.buttons span {
   margin-right: 10px;
 }
-.todo-list ol li{
+.todo-list ol li {
   margin: 0 35px;
   font-size: 1.1rem;
   font-weight: 600;
