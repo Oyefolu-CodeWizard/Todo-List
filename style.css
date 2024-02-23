@@ -55,16 +55,19 @@ input[type="button"] {
 }
 .todo-input {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 5px;
   gap: 10px;
-  display: none;
+  /* display: none; */
 }
 .todo-text {
-  width: 250px;
+  width: 450px;
   padding: 10px;
   border: 1px solid rebeccapurple;
   outline-color: rgba(113, 44, 177, 0.726);
+  resize: none;
+  border-radius: 5px;
 }
 .submit {
   border: unset;
@@ -79,6 +82,14 @@ input[type="button"] {
   padding: 0 10px;
   font-weight: 600;
   margin: 10px;
+}
+.align {
+  display: flex;
+  flex-direction: column;
+}
+.align h2 {
+  margin-bottom: 30px;
+  text-align: center;
 }
 .edit-btn {
   border: unset;
@@ -105,4 +116,17 @@ input[type="button"] {
   margin: 0 35px;
   font-size: 1.1rem;
   font-weight: 600;
+}
+.modify {
+  display: flex;
+  margin-right: 10px;
+}
+.modify a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
 }
