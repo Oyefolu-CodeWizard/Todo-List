@@ -134,3 +134,9 @@ input[type="button"] {
   display: flex;
   flex-direction: column;
 }
+.details h3 {
+  border: 1px solid rebeccapurple;
+  border-radius: 7px;
+  padding: 10px 30px;
+  background-color: rgb(229, 213, 245);
+}
